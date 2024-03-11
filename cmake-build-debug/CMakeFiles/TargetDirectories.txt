@@ -1,0 +1,3 @@
+C:/Users/frane/CLionProjects/univeristy-pjc/cmake-build-debug/CMakeFiles/univeristy_pjc.dir
+C:/Users/frane/CLionProjects/univeristy-pjc/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/frane/CLionProjects/univeristy-pjc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
