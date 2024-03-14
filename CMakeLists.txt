@@ -3,4 +3,6 @@ project(university_pjc)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(PJC01_33 labs/lab_01/main.cpp)
+add_executable(PJC01_33 labs/lab_01/main.cpp
+        labs/lab_01/main2.cpp
+        labs/lab_01/main3.cpp)

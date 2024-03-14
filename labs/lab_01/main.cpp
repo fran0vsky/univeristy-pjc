@@ -2,6 +2,8 @@
 #include <vector>
 #include <string>
 
+//box print
+
 auto boxPrint(std::vector<std::string> vec, char frame = '*') -> void {
 //najpierw musimy znajeźć najdłuższe dłowo , od niego będzie zależeć kształt
     int maxSize = 0;
