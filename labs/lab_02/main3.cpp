@@ -44,3 +44,6 @@ auto main() -> int {
     fun1(b);
     fmt::println("{}", b);
 }
+auto fun1(int& a) ->void{
+    a+=4;
+}
