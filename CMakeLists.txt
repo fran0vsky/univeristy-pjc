@@ -17,3 +17,4 @@ add_executable(PJC01_33 labs/lab_01/main.cpp
         labs/lab_01/main2.cpp
         labs/lab_01/main3.cpp
         labs/lab_02/main3.cpp)
+target_link_libraries(university_pjc fmt)
