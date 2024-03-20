@@ -22,3 +22,13 @@ auto main() -> int {
     }
 
 
+    //min max
+    auto maxNumber = std::ranges::max(numbers);//wartosc
+    auto maxIter = std::ranges::max_element(numbers); //iterator
+    auto minNumber = std::ranges::min(numbers);//wartość
+    auto minIter = std::ranges::min_element(numbers); //iterator
+
+    fmt::println(
+            "min: {}\nmax: {}\nminElementIter: {}\nmaxElementIter: {}",
+            minNumber, maxNumber, *minIter, *maxIter
+    );
