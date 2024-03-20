@@ -48,3 +48,8 @@ auto main() -> int {
     fmt::println("sorted {}", strVec);
     //sortujemy po dlugosci
     //kolekjca , komparator, projekcja
+    std::ranges::sort(strVec, std::ranges::greater(), std::ranges::size);
+    fmt::println("sorted by size {}", strVec);
+    //dodanie domyslnego komparatora
+    std::ranges::sort(strVec, {}, std::ranges::size); // DOMYŚLNA WARTOŚĆ FUNKCJI
+    fmt::println("sorted by size {}", strVec);
