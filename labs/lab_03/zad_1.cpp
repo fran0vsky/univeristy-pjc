@@ -39,3 +39,12 @@ auto main() -> int {
     fmt::println("swap 1 {}", vec);
     std::ranges::iter_swap(vec.begin() + 5, it); //zwróć uwagę co będzie podmienione
     fmt::println("swap 2 {}", vec);
+
+    //sortowanie
+    auto strVec = std::vector<std::string>{"ala", "ma", "kota", "!"};
+    std::ranges::sort(strVec, std::ranges::less());//ASC
+    fmt::println("sorted ascending  {}", strVec);
+    std::ranges::sort(strVec, std::ranges::greater()); //DES
+    fmt::println("sorted {}", strVec);
+    //sortujemy po dlugosci
+    //kolekjca , komparator, projekcja
