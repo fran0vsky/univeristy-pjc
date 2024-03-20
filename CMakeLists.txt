@@ -13,7 +13,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(fmt)
 
 
-add_executable(PJC01_33 labs/lab_01/main.cpp
+add_executable(
+        PJC01_33 labs/lab_01/main.cpp
         labs/lab_01/main2.cpp
         labs/lab_01/main3.cpp
         labs/lab_02/main4.cpp
