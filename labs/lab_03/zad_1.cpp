@@ -69,3 +69,22 @@ auto main() -> int {
     } else {
         fmt::println("No positive numbers found");
     }
+
+    //wersja z lambda
+    //schemat lamnbdy auto nazwa = [](lista parametrów) -> typ wracamy{ciło funkcji};
+    auto isPositive = [](int a) -> bool { return a > 0; }; //mozna wywołac wiele razy
+    positiveNumber = std::ranges::find_if(numbers, isPositive);
+    if (positiveNumber != numbers.end()) {
+        fmt::println(
+                "The first positive number is: {}",
+                *positiveNumber
+        );
+    } else {
+        fmt::println("No positive numbers found");
+    }
+    //Transformująca  - okresla jak wartosc powinna zostac zmieniona
+    // co modyfikujemy , gdzie ma trafić , jaką zmiane chcemy wprowadzic
+    auto res = std::vector<int>(strVec.size());
+    std::ranges::transform(strVec, res.begin(), [](std::string word)->int { return word.size(); });
+    fmt::println("transformation result {}", res);
+}
