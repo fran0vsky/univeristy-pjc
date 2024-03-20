@@ -53,3 +53,19 @@ auto main() -> int {
     //dodanie domyslnego komparatora
     std::ranges::sort(strVec, {}, std::ranges::size); // DOMYŚLNA WARTOŚĆ FUNKCJI
     fmt::println("sorted by size {}", strVec);
+
+    //komparator -  to narzędzie, które pozwala sterować zasadą porządkowania elementów w algorytmach . przyjmuje dwa parametry i zwraca bool zwraca true gdy pierwszy element powinien być po lewej stronie
+    //projekcja - pozwala na patrzenie na obiekt przez inny pryzmat — przez inną cechę. przyjmuje jeden element i zwraca go w oczekiwanej przez nas formie (innym typie)
+    //predykat -  to funkcja, która coś testuje. Przyjmuje pojedynczy argument i zwraca true jeżeli spełnia on jakiś warunek.
+
+    //Tworzenie wlasnych lambd
+    auto positiveNumber = std::ranges::find_if(numbers, isPositive);
+
+    if (positiveNumber != numbers.end()) {
+        fmt::println(
+                "The first positive number is: {}",
+                *positiveNumber
+        );
+    } else {
+        fmt::println("No positive numbers found");
+    }
