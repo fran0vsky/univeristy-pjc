@@ -32,3 +32,10 @@ auto main() -> int {
             "min: {}\nmax: {}\nminElementIter: {}\nmaxElementIter: {}",
             minNumber, maxNumber, *minIter, *maxIter
     );
+
+    auto vec = std::vector<int>{3, 4, 5, 2, 7, 8, 11, 5, 3, 8};
+    auto it = vec.end() - 3;
+    std::ranges::swap(*(vec.begin() + 3), *it);
+    fmt::println("swap 1 {}", vec);
+    std::ranges::iter_swap(vec.begin() + 5, it); //zwróć uwagę co będzie podmienione
+    fmt::println("swap 2 {}", vec);
