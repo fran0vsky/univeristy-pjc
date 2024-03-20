@@ -12,3 +12,13 @@ auto main() -> int {
     fmt::println("{}", *iter); // pobranie wartości
     fmt::println("{}", *numbers.end());
 
+    //poprawne zabezpieczenie
+    iter = std::ranges::find(numbers,
+                             8); // jeżeli takiego elementu nie ma zostanie zwrócony iterator do pierwszego elementu poza zakresem (.end())
+    if (iter != numbers.end()) {
+        fmt::println("{}", *iter);
+    } else {
+        fmt::println("No such element");
+    }
+
+
