@@ -15,7 +15,7 @@ auto main() -> int {
 
     //poprawne zabezpieczenie
     iter = std::ranges::find(numbers,
-                             7); // jeżeli takiego elementu nie ma zostanie zwrócony iterator do pierwszego elementu poza zakresem (.end())
+                             8); // jeżeli takiego elementu nie ma zostanie zwrócony iterator do pierwszego elementu poza zakresem (.end())
     if (iter != numbers.end()) {
         fmt::println("{}", *iter);
     } else {
