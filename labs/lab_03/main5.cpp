@@ -87,5 +87,5 @@ auto main() -> int {
     // co modyfikujemy , gdzie ma trafić , jaką zmiane chcemy wprowadzic
     auto res = std::vector<int>(strVec.size());
     std::ranges::transform(strVec, res.begin(), [](std::string word)->int { return word.size(); });
-    fmt::println("transformation resul {}", res);
+    fmt::println("transformation result {}", res);
 }
